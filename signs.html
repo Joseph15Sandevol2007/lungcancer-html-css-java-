@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signs and Symptoms</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h2 {
+            color: #333;
+        }
+        ul {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            list-style-type: square;
+        }
+        li {
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 15px;
+            background: #007BFF;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        a:hover {
+            background: #0056b3;
+        }
+        .highlight {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h2>Signs and Symptoms</h2>
+    <p>Common symptoms include:</p>
+    <ul>
+        <li onclick="highlight(this)">Unexplained weight loss</li>
+        <li onclick="highlight(this)">Fever</li>
+        <li onclick="highlight(this)">Fatigue</li>
+        <li onclick="highlight(this)">Pain</li>
+        <li onclick="highlight(this)">Skin changes</li>
+        <li onclick="highlight(this)">Fatigue or extreme tiredness that doesn’t get better with rest.</li>
+        <li onclick="highlight(this)">Weight loss or gain of 10 pounds or more for no known reason</li>
+        <li onclick="highlight(this)">Eating problems such as not feeling hungry, trouble swallowing, belly pain, or nausea and vomiting</li>
+        <li onclick="highlight(this)">Swelling or lumps anywhere in the body</li>
+        <li onclick="highlight(this)">Thickening or lump in the breast or other part of the body</li>
+        <li onclick="highlight(this)">Pain, especially new or with no known reason, that doesn’t go away or gets worse</li>
+        <li onclick="highlight(this)">Skin changes such as a lump that bleeds or turns scaly, a new mole or a change in a mole, a sore that does not heal, or a yellowish color to the skin or eyes (jaundice).</li>
+        <li onclick="highlight(this)">Cough or hoarseness that does not go away</li>
+        <li onclick="highlight(this)">Unusual bleeding or bruising for no known reason</li>
+        <li onclick="highlight(this)">Change in bowel habits, such as constipation or diarrhea, that doesn’t go away or a change in how your stools look</li>
+        <li onclick="highlight(this)">Bladder changes such as pain when passing urine, blood in the urine or needing to pass urine more or less often</li>
+        <li onclick="highlight(this)">Fever or night sweats</li>
+        <li onclick="highlight(this)">Headaches</li>
+        <li onclick="highlight(this)">Vision or hearing problems</li>
+        <li onclick="highlight(this)">Mouth changes such as sores, bleeding, pain, or numbness</li>
+    </ul>
+    <a href="index.html"><strong>Back to what is Lung cancer</strong></a>
+
+    <script>
+        function highlight(element) {
+            element.classList.toggle("highlight");
+        }
+    </script>
+</body>
+</html>

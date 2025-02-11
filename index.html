@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lung Cancer </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #f2f2f2;
+            padding: 20px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        p {
+            font-size: 18px;
+        }
+        img {
+            margin: 15px;
+            border-radius: 10px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .highlight {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <hr>
+    <h1>Lung Awareness</h1>
+    <p>Understanding Lung cancer to save lives</p>
+    <hr>
+</header>
+
+<main>
+    <h2>What is Lung Cancer?</h2>
+    <p><a href="types.html"><strong>Types of Lung Cancer</strong></a></p>
+    <p><a href="signs.html"><strong>Signs and Symptoms</strong></a></p>
+    <p onmouseover="highlightText(this)" onmouseout="removeHighlight(this)">Lung cancer is a disease caused by uncontrolled cell division in your lungs...</p>
+    <p>Lung cancer is the name for cancers that start in your lungs...</p>
+     
+    <h2>Types of Lung Cancer</h2>
+    <ul>
+        <h3><li>Non-small cell lung cancer (NSCLC)</li></h3>
+         <p>Non-small cell lung cancer (NSCLC) is the most common type of lung cancer...</p>     
+         <h3><li>Small cell lung cancer (SCLC)</li></h3>
+        <p>Small cell lung cancer (SCLC) grows more quickly and is harder to treat than NSCLC...</p>
+         <h3><li>Lymphoma</li></h3>
+          <p>Lymphoma is cancer that begins in lymphocytes...</p>
+          <p>There are two main types of lymphoma:</p>
+          <p>Hodgkin lymphoma – People with this disease have abnormal lymphocytes...</p>
+          <p>Non-Hodgkin lymphoma – This is a large group of cancers...</p>   
+         <h3><li>Multiple Myeloma</li></h3>
+         <p>Multiple myeloma is cancer that begins in plasma cells...</p>
+        <h3><li>Melanoma</li></h3>
+        <p>Melanoma is cancer that begins in cells that become melanocytes...</p> 
+    </ul>
+</main>
+
+<footer>
+    <p>&copy; 2024 Lung Cancer Awareness. All rights reserved.</p>
+</footer>
+
+<script>
+    function highlightText(element) {
+        element.classList.add("highlight");
+    }
+    function removeHighlight(element) {
+        element.classList.remove("highlight");
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Types of Cancer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+        p {
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        li {
+            background-color: #fff;
+            margin: 15px 0;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        li h3 {
+            color: #2980b9;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        li:hover, li.active {
+            background-color: #ecf0f1;
+        }
+        a {
+            text-decoration: none;
+            color: #3498db;
+            font-weight: bold;
+        }
+        a:hover {
+            color: #2980b9;
+        }
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 14px;
+            color: #7f8c8d;
+        }
+    </style>
+</head>
+<body>
+    <h2>Types of Lung Cancer</h2>
+    <ul id="cancerList">
+        <li><h3>Non-small cell lung cancer (NSCLC)</h3><p>Most common type of lung cancer...</p></li>
+        <li><h3>Small cell lung cancer (SCLC)</h3><p>Grows quickly and is harder to treat...</p></li>
+        <li><h3>Leukemia</h3><p>Cancer of the blood-forming tissues...</p></li>
+        <li><h3>Lymphoma</h3><p>Cancer that begins in lymphocytes...</p></li>
+        <li><h3>Multiple Myeloma</h3><p>Cancer that begins in plasma cells...</p></li>
+        <li><h3>Melanoma</h3><p>Cancer that begins in melanocytes...</p></li>
+    </ul>
+    <a href="index.html"><strong>Back to what is Lung cancer</strong></a>
+    <script>
+        document.querySelectorAll('#cancerList li').forEach(item => {
+            item.addEventListener('click', function() {
+                document.querySelectorAll('#cancerList li').forEach(li => li.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>
